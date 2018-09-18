@@ -1,0 +1,53 @@
+{
+  "name": "react-fundation",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build",
+    "test": "jest",
+    "dev": "webpack-dev-server --mode development"
+  },
+  "repository": "https://github.com/aleDaniel00/react-fundation.git",
+  "author": "aleDaniel00",
+  "license": "MIT",
+  "dependences": {
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "7",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "directory-named-webpack-plugin": "^4.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "flow-bin": "^0.81.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "jest-environment-enzyme": "^6.0.4",
+    "jest-enzyme": "^6.0.4",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "regenerator-runtime": "^0.12.1",
+    "webpack": "^4.18.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.0.7",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^3.1.1",
+    "jest-directory-named-resolver": "jsonnull/jest-directory-named-resolver"
+  }
+}
